@@ -7,17 +7,17 @@ import (
 )
 
 func main() {
-	// Configuración del consumidor de Kafka
+	// Kafka consumer configuration
 	config := sarama.NewConfig()
 	config.Consumer.Return.Errors = true
 
-	// Crear un consumidor de Kafka
+	// Create a Kafka consumer
 	consumer, err := sarama.NewConsumer([]string{"localhost:9092"}, config)
 	if err != nil {
 		log.Fatalf("Error creating consumer: %v", err)
 	}
 	defer consumer.Close()
 
-	// Imprimir un mensaje para confirmar que la conexión se ha establecido con éxito
+	// Print a message to confirm that the connection has been established successfully
 	log.Println("Connected to Kafka!")
 }
