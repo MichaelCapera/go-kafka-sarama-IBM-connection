@@ -1,0 +1,27 @@
+# Generated binary files
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Build folder
+/build/
+
+# Bin folder
+/bin/
+
+# Configuration file
+*.config
+
+# Log files and output files
+*.log
+*.out
+
+# Generated test folders and files
+/_test/
+
+# Dependency folders and files
+/vendor/
+/go.sum
+/go.mod
